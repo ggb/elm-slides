@@ -1,0 +1,3 @@
+# elm-slides
+
+Everyone needs to write his own presentation tool in Elm...
