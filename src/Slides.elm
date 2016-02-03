@@ -65,14 +65,12 @@ goBack (past, current, future) =
 
 update : {x:Int, y:Int} -> SlideZipper -> SlideZipper
 update {x, y} model =
-  let n = Debug.log "keys" (x,y)
-  in
-    if x == 1 || y == 1 then
-      goForward model 
-    else if x == -1 || y == -1 then
-      goBack model 
-    else
-      model
+  if x == 1 || y == 1 then
+    goForward model 
+  else if x == -1 || y == -1 then
+    goBack model 
+  else
+    model
       
 
 state : Signal SlideZipper
