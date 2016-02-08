@@ -14,30 +14,13 @@ type alias Slide = String
 type alias SlideZipper = ( List Slide, Slide, List Slide )
 
 
-slide1 : Slide
-slide1 = """
-# First Slide
-Text text text
-"""
-
-
-slide2 : Slide
-slide2 = """
-# Second Slide
-More text
-![Eichhoernchen](http://tinyurl.com/oahq83h)
-"""
-
-
-slide3 : Slide
-slide3 = """
-# Third Slide
-Etc. etc. 
-"""
-
-
-slides : SlideZipper
-slides = ([], slide1, [slide2, slide3])
+fromList : List String -> SlideZipper
+fromList list =
+  case list of
+    (head::rest) -> 
+      ([], head, rest)
+    [] ->
+      ([], "", [])
 
 
 view : SlideZipper -> Html
@@ -73,11 +56,11 @@ update {x, y} model =
     model
       
 
-state : Signal SlideZipper
-state = 
-  Signal.foldp update slides Keyboard.arrows
+state : SlideZipper -> Signal SlideZipper
+state initialSlides = 
+  Signal.foldp update initialSlides Keyboard.arrows
 
 
-main : Signal Html
-main =
-  Signal.map view state
+start : SlideZipper -> Signal Html
+start initialSlides =
+  Signal.map view (state initialSlides)
