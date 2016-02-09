@@ -13,6 +13,8 @@ type alias Slide = String
 -- past, current, future
 type alias SlideZipper = ( List Slide, Slide, List Slide )
 
+-- type Direction = Left | Right
+
 
 fromList : List String -> SlideZipper
 fromList list =
