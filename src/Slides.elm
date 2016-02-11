@@ -15,6 +15,13 @@ type alias SlideZipper = ( List Slide, Slide, List Slide )
 
 -- type Direction = Left | Right
 
+options =
+  { githubFlavored = Just { tables = False, breaks = False }
+  , defaultHighlighting = Just "elm"
+  , sanitize = False
+  , smartypants = False
+  }
+
 
 fromList : List String -> SlideZipper
 fromList list =
@@ -25,9 +32,9 @@ fromList list =
       ([], "", [])
 
 
-view : SlideZipper -> Html
+--view : SlideZipper -> Html
 view (_, currentSlide, _) =
-  Markdown.toHtml currentSlide
+  Markdown.toHtmlWith options currentSlide
 
 
 goForward : SlideZipper -> SlideZipper

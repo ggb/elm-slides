@@ -89,10 +89,10 @@ Node.js wird noch nicht gut unterstützt
 # Präsentation: Model
 
     -- Data
-    -- elm-community/elm-undo-redo
     type alias Slide = String
 
     -- past, current, future
+    -- elm-community/elm-undo-redo
     type alias SlideZipper = ( List Slide, Slide, List Slide )
 
     -- type Direction = Left | Right
