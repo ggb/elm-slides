@@ -10,3 +10,7 @@ docs/
 *.js
 *.html
 .vscode/
+
+
+img/
+assets/

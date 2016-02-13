@@ -16,25 +16,59 @@ mySlides = """
 von Gregor Große-Bölting
 
 
-## Elm (fast) im produktiven Einsatz
+### Reden wir über Indiana Jones!
 
-von Gregor Große-Bölting
+![Der einzige Kinoheld, ever...](img/crusade.jpg)
 
 
-# Elm im produktiven Einsatz
+# Der Name Gottes...
 
-Was ist Elm? Und was macht man damit?
+![Jehova oder Iehova?](img/indylc_3949.jpg)
 
-Warum denn gerade mit Elm?
 
-Wie habt ihr das gemacht?
+## JS-Entwickler kennen das!
 
-Wo kann ich das lernen?
+![Total logisch](img/js_madness.PNG)
+
+
+![Grals Tagebuch](img/grals_tagebuch.jpg)
+
+
+![Stackoverflow](img/stackoverflow_pixel.PNG)
+
+
+![Stackoverflow zum Zweiten](img/stackoverflow_js.PNG)
+
+
+# "reserved words" in JavaScript
+
+abstract, arguments, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, do, double, else, enum, eval, export, extends, false, final, finally, float, for, function, goto, if, implements, import, in, instanceof, int, interface, let, long, native, new, null, package, private, protected, public, return, short, static, super, switch, synchronized, this, throw, throws, transient, true, try, typeof, var, void, volatile, while, with, yield
+
+
+## Und in Elm: 63 vs. 14
+
+alias, as, case, else, if, import, in, let, module, of, port, then, type, where
+
+
+# JavaScript Projektstruktur
+
+17 Verzeichnisse
+
+54 Dateien
+
+
+## Elm Projektstruktur
+
+1 Verzeichnis
+
+8 Dateien 
+
+(LOC im Schnitt gleich)
 
 
 # Was ist Elm?
 
-Funktionale Sprache
+Elm ist eine funktionale, reaktive Sprache
 
 
 # Was ist Elm?
@@ -53,11 +87,6 @@ Stark und statisch typisierte Sprache mit Typinferenz.
 Typdeklarationen sind optional. 
 
 Der Kompiler ist ein Sahnestück.
-
-
-# Was ist Elm?
-
-"Functional Reactive"
 
 
 # Und was macht man damit?
@@ -81,9 +110,9 @@ Node.js wird noch nicht gut unterstützt
 
 # Beispiel: Präsentation
 
-* Slides mit Markdown
-* Navigation mit Pfeiltasten
-* 
+Slides mit Markdown
+
+Navigation mit Pfeiltasten 
 
 
 # Präsentation: Model
