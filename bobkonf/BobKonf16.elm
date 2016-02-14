@@ -16,7 +16,13 @@ mySlides = """
 von Gregor Große-Bölting
 
 
-### Reden wir über Indiana Jones!
+# Wer ich bin und was ich mache
+
+
+# Wer seid ihr?
+
+
+### Reden wir über Indiana Jones
 
 ![Der einzige Kinoheld, ever...](img/crusade.jpg)
 
@@ -26,7 +32,7 @@ von Gregor Große-Bölting
 ![Jehova oder Iehova?](img/indylc_3949.jpg)
 
 
-## JS-Entwickler kennen das!
+## JS-Entwickler kennen das
 
 ![Total logisch](img/js_madness.PNG)
 
@@ -66,6 +72,12 @@ alias, as, case, else, if, import, in, let, module, of, port, then, type, where
 (LOC im Schnitt gleich)
 
 
+# graphomate
+
+
+## Design Studio: Live Demo!
+
+
 # Was ist Elm?
 
 Elm ist eine funktionale, reaktive Sprache
@@ -75,28 +87,39 @@ Elm ist eine funktionale, reaktive Sprache
 
 Funktion: Nimmt Input und produziert Output. Sonst nichts.
 
-Insbesondere keine Seiteneffekte.
+Insbesondere keine Seiteneffekte
 
-Werte sind "immutable".
+Werte sind "immutable"
 
 
 # Was ist Elm?
 
-Stark und statisch typisierte Sprache mit Typinferenz.
+Stark und statisch typisierte Sprache mit Typinferenz
 
-Typdeklarationen sind optional. 
-
-Der Kompiler ist ein Sahnestück.
+Typdeklarationen sind optional
 
 
-# Und was macht man damit?
+## Der Compiler ist ein Sahnestück
+
+
+## Compiler-Fehler
+
+![Elm Compiler](img/js_madness2.PNG)
+
+
+# Laufzeit-Fehler? Nein, danke!
+
+![Keine Laufzeit-Fehler in Elm](img/laufzeit_fehler.png)
+
+
+## Und was macht man damit?
 
 "The compiler happens to produce JavaScript" 
 
 
 # Und was macht man damit?
 
-2D-Spiele
+(2D-)Spiele
 
 Nutzer-Oberflächen für das Web
 
@@ -115,6 +138,21 @@ Slides mit Markdown
 Navigation mit Pfeiltasten 
 
 
+# Beispiel: Kontrollfluss
+
+Initiales Modell
+
+-> Rendering
+
+-> Nutzerinteraktion
+
+-> Update des Modells
+
+-> Rendering 
+
+...
+
+
 # Präsentation: Model
 
     -- Data
@@ -122,7 +160,8 @@ Navigation mit Pfeiltasten
 
     -- past, current, future
     -- elm-community/elm-undo-redo
-    type alias SlideZipper = ( List Slide, Slide, List Slide )
+    type alias SlideZipper = 
+      ( List Slide, Slide, List Slide )
 
     -- type Direction = Left | Right
 
@@ -177,4 +216,20 @@ Navigation mit Pfeiltasten
     main : Signal Html
     main =
       Signal.map view state
+
+
+# Zusammenfassung: Was uns Elm bringt
+
+Keine Laufzeit-Fehler
+
+Schnelle Entwicklung
+
+Übersichtliche Projekte
+
+
+# Zusammenfassung: Was Elm unseren Kunden bringt
+
+Keine Laufzeit-Fehler
+
+Schnelle Umsetzung von Features
 """
