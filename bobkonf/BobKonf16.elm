@@ -18,8 +18,27 @@ von Gregor Große-Bölting
 
 # Wer ich bin und was ich mache
 
+@himilkon
+
+github.com/ggb
+
+M. A. Philosophie und Informatik
+
+FP Neuling
+
+
+# graphomate
+
+![graphomate gang](img/graphomate.JPG)
+
 
 # Wer seid ihr?
+
+JavaScript?
+
+Haskell?
+
+Elm?
 
 
 ### Reden wir über Indiana Jones
@@ -51,7 +70,7 @@ von Gregor Große-Bölting
 abstract, arguments, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, do, double, else, enum, eval, export, extends, false, final, finally, float, for, function, goto, if, implements, import, in, instanceof, int, interface, let, long, native, new, null, package, private, protected, public, return, short, static, super, switch, synchronized, this, throw, throws, transient, true, try, typeof, var, void, volatile, while, with, yield
 
 
-## Und in Elm: 63 vs. 14
+## Und in Elm: 14 vs. 63
 
 alias, as, case, else, if, import, in, let, module, of, port, then, type, where
 
@@ -70,9 +89,6 @@ alias, as, case, else, if, import, in, let, module, of, port, then, type, where
 8 Dateien 
 
 (LOC im Schnitt gleich)
-
-
-# graphomate
 
 
 ## Design Studio: Live Demo!
@@ -102,7 +118,7 @@ Typdeklarationen sind optional
 ## Der Compiler ist ein Sahnestück
 
 
-## Compiler-Fehler
+### Compiler-Fehler
 
 ![Elm Compiler](img/js_madness2.PNG)
 
