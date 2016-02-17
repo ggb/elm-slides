@@ -16,6 +16,15 @@ mySlides = """
 von Gregor Große-Bölting
 
 
+## Wer seid ihr?
+
+JavaScript?
+
+Haskell?
+
+Elm?
+
+
 # Wer ich bin und was ich mache
 
 @himilkon
@@ -32,13 +41,7 @@ FP Neuling
 ![graphomate gang](img/graphomate.JPG)
 
 
-# Wer seid ihr?
-
-JavaScript?
-
-Haskell?
-
-Elm?
+## Design Studio: Live Demo!
 
 
 ### Reden wir über Indiana Jones
@@ -91,9 +94,6 @@ alias, as, case, else, if, import, in, let, module, of, port, then, type, where
 (LOC im Schnitt gleich)
 
 
-## Design Studio: Live Demo!
-
-
 # Was ist Elm?
 
 Elm ist eine funktionale, reaktive Sprache
@@ -118,7 +118,7 @@ Typdeklarationen sind optional
 ## Der Compiler ist ein Sahnestück
 
 
-### Compiler-Fehler
+# Compiler-Fehler
 
 ![Elm Compiler](img/js_madness2.PNG)
 
