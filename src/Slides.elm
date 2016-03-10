@@ -13,7 +13,8 @@ type alias Slide = String
 -- past, current, future
 type alias SlideZipper = ( List Slide, Slide, List Slide )
 
--- type Direction = Left | Right
+type Direction = Left | Right | Stay
+
 
 options =
   { githubFlavored = Just { tables = False, breaks = False }
@@ -55,19 +56,30 @@ goBack (past, current, future) =
       (rest, last, current::future)
 
 
-update : {x:Int, y:Int} -> SlideZipper -> SlideZipper
-update {x, y} model =
+update : Direction -> SlideZipper -> SlideZipper
+update direction model =
+  case direction of
+    Right ->
+      goForward model
+    Left ->
+      goBack model
+    Stay ->
+      model
+
+
+keyToDirection : {x:Int, y:Int} -> Direction
+keyToDirection {x, y} =
   if x == 1 || y == 1 then
-    goForward model 
+    Right
   else if x == -1 || y == -1 then
-    goBack model 
+    Left 
   else
-    model
+    Stay
       
 
 state : SlideZipper -> Signal SlideZipper
 state initialSlides = 
-  Signal.foldp update initialSlides Keyboard.arrows
+  Signal.foldp update initialSlides (Signal.map keyToDirection Keyboard.arrows)
 
 
 start : SlideZipper -> Signal Html
