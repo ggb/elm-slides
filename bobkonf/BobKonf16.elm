@@ -2,7 +2,10 @@ module BobKonf16 where
 
 import String
 import Slides 
+import Html exposing (Html)
 
+
+main : Signal Html
 main = 
   mySlides
   |> String.split "\n\n\n"
@@ -10,6 +13,7 @@ main =
   |> Slides.start 
 
 
+mySlides : String
 mySlides = """
 # Elm im produktiven Einsatz
 

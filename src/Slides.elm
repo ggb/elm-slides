@@ -33,7 +33,7 @@ fromList list =
       ([], "", [])
 
 
---view : SlideZipper -> Html
+view : SlideZipper -> Html
 view (_, currentSlide, _) =
   Markdown.toHtmlWith options currentSlide
 
